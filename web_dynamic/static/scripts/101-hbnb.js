@@ -152,8 +152,8 @@ const place_temp = (place) => `
 
 const review_temp = (review) => {
   const date = new Date(review.created_at);
-  return `<li><h3>${review.user.first_name} ${
-    review.user.last_name
+  return `<li><h3>${review.user?.first_name} ${
+    review.user?.last_name
   } On the ${date.getUTCDay()}th of ${date.toLocaleString("default", {
     month: "long",
     year: "numeric",
