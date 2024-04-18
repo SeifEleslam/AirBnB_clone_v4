@@ -1,5 +1,5 @@
 const MAX_DES = 30;
-const API_URL = "http://"+window.location.hostname+":5001/api/v1/";
+const API_URL = "http://"+window.location.hostname+"/api/v1/";
 const amenities = {};
 $(document).ready(function () {
   $("input[type=checkbox]").change(handle_amenities);
